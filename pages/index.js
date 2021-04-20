@@ -1,9 +1,32 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import WriteToCloudFirestore from '../components/cloudFirestore/Write'
+import ReadFromCloudFirestore from '../components/cloudFirestore/Read'
+import Counter from '../components/realtimeDatabse/Counter'
+
+import { useUser } from '../firebase/useUser'
 
 export default function Home() {
-  return (
+
+  const { user, logout } = useUser()
+
+  if (user) {
+    return (
+      <>
+        <h1>Welcome Back {user.name}</h1>
+        <h3>{user.email}</h3>
+        <WriteToCloudFirestore />
+        <ReadFromCloudFirestore />
+        <Counter id={user.id} />
+        <button className="btn" onClick={() => logout()}>Log Out</button>
+        <p><a href="/">Back to Home</a></p>
+      </>
+    )
+  }
+  else return (
     <div className={styles.container}>
+
+      <p className="btn"><a href="/auth">Log in</a></p>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />

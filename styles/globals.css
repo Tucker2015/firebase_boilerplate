@@ -14,3 +14,14 @@ a {
 * {
   box-sizing: border-box;
 }
+.btn {
+  background: rgb(157, 40, 31);
+  color: #fff;
+  width: 80px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  height: auto;
+  font-size: 1rem;
+  text-align: center;
+}
