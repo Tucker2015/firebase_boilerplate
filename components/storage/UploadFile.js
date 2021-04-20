@@ -1,8 +1,11 @@
 import firebase from 'firebase/app'
 import 'firebase/storage'
 import { useRef, useState } from 'react'
+import { useUser } from '../../firebase/useUser'
+
 
 const UploadFile = () => {
+    const { user } = useUser()
 
     const inputEl = useRef(null)
     const [value, setValue] = useState(0)
@@ -22,21 +25,21 @@ const UploadFile = () => {
                 alert(error)
             },
             function complete() {
-                alert('File Uploaded')
+                alert(file.name + ' was uploaded to Firebase')
             }
 
         )
     }
     return (
-        <>
-
+        <div>
+            <h3> Upload File</h3>
             <progress value={value} max="100" ></progress>
             <input
                 type="file"
                 onChange={uploadFile}
                 ref={inputEl}
             />
-        </>
+        </div>
     )
 }
 export default UploadFile
