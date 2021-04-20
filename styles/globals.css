@@ -25,6 +25,7 @@ a {
   font-size: 1rem;
   margin: 10px;
   text-align: center;
+  cursor: pointer;
 }
 .btn2 {
   background: rgb(72, 114, 114);
@@ -37,4 +38,5 @@ a {
   font-size: 1rem;
   margin: 10px;
   text-align: center;
+  cursor: pointer;
 }
