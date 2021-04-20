@@ -1,3 +1,11 @@
+:root {
+  --font-sz-s: 1rem;
+  --font-sz-m: 2rem;
+  --font-sz-l: 3rem;
+  --primary-color: #575755;
+  --secondary-color: #585fff;
+}
+
 html,
 body {
   padding: 0;
