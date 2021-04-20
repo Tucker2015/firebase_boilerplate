@@ -21,7 +21,7 @@ const ReadFromCloudFirestore = () => {
         }
     }
     return (
-        <button onClick={readData}>Read Data</button>
+        <button className="btn2" onClick={readData}>Read Data</button>
     )
 
 }

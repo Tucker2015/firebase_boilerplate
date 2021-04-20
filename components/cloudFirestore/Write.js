@@ -25,7 +25,7 @@ const WriteToCloudFirestore = () => {
     return (
 
         <>
-            <button onClick={sendData}>Send Data</button>
+            <button className="btn2" onClick={sendData}>Send Data</button>
         </>
     )
 }

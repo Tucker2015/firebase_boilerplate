@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 import WriteToCloudFirestore from '../components/cloudFirestore/Write'
 import ReadFromCloudFirestore from '../components/cloudFirestore/Read'
 import Counter from '../components/realtimeDatabse/Counter'
-
+import UploadFile from '../components/storage/UploadFile'
 import { useUser } from '../firebase/useUser'
 
 export default function Home() {
@@ -18,6 +18,8 @@ export default function Home() {
         <WriteToCloudFirestore />
         <ReadFromCloudFirestore />
         <Counter id={user.id} />
+        <UploadFile />
+
         <button className="btn" onClick={() => logout()}>Log Out</button>
         <p><a href="/">Back to Home</a></p>
       </>

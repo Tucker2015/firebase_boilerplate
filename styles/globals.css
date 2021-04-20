@@ -17,11 +17,24 @@ a {
 .btn {
   background: rgb(157, 40, 31);
   color: #fff;
-  width: 80px;
+  width: auto;
   padding: 10px;
   border: none;
   border-radius: 5px;
   height: auto;
   font-size: 1rem;
+  margin: 10px;
+  text-align: center;
+}
+.btn2 {
+  background: rgb(72, 114, 114);
+  color: #fff;
+  width: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  height: auto;
+  font-size: 1rem;
+  margin: 10px;
   text-align: center;
 }

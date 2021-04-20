@@ -24,7 +24,7 @@ const Counter = ({ id }) => {
         registerCount()
     }
     return (
-        <button onClick={increaseCount}>Increase Counter {count ? count : '---'}</button>
+        <button className="btn2" onClick={increaseCount}>Increase Counter {count ? count : '---'}</button>
     )
 
 }
