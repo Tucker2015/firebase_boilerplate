@@ -28,6 +28,7 @@ export default function Home() {
                 <div className={styles.videoBox}>
                     <Videojs {...videoJsOptions} />
                 </div>
+
             </main>
 
         </div>
