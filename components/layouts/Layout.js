@@ -6,9 +6,9 @@ export default function Layout({ children }) {
     const [open, setOpen] = React.useState(false);
 
     return (
-        <body>
+        <>
             <Navbar />
             {children}
-        </body>
+        </>
     )
 }
