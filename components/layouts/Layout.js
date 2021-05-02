@@ -1,23 +1,14 @@
-import styles from '../../styles/Layout.module.css'
+import React, { useEffect } from 'react'
+import Navbar from '../Navigation/Navbar'
 
+export default function Layout({ children }) {
 
-const Layout = ({ children }) => {
-
+    const [open, setOpen] = React.useState(false);
 
     return (
-        <>
-            <header className={styles.container}>
-                <h3 className={styles.bannerHeader}>Banner</h3>
-                <ul className={styles.list}>
-                    <li>Test</li>
-                    <li>Home</li>
-                    <li>Test</li>
-                    <li>Test</li>
-                </ul>
-            </header>
+        <body>
+            <Navbar />
             {children}
-        </>
+        </body>
     )
 }
-
-export default Layout
