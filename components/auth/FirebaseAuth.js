@@ -15,10 +15,13 @@ const firebaseAuthConfig = {
             provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
             requireDisplayName: true,
         },
+<<<<<<< HEAD
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
         firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+=======
+>>>>>>> testing
     ],
-    signInSuccessUrl: '/dashboard',
+    signInSuccessUrl: '/liveVideo',
     credentialsHelper: 'none',
     callbacks: {
         signInSuccessWithAuthResult: async ({ user }, redirectUrl) => {
@@ -41,7 +44,6 @@ const FirebaseAuth = () => {
         <div>
             {renderAuth ? (
                 <StyledFirebaseAuth
-
                     uiConfig={firebaseAuthConfig}
                     firebaseAuth={firebase.auth()}
                 />

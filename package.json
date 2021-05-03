@@ -21,6 +21,11 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-firebaseui": "^4.1.0",
+<<<<<<< HEAD
     "tailwindcss": "^2.1.1"
+=======
+    "react-icons": "^4.2.0",
+    "video.js": "^7.11.8"
+>>>>>>> testing
   }
 }

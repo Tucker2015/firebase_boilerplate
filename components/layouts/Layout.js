@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 import styles from '../../styles/Layout.module.css'
 import { Navbar } from './Navbar';
+=======
+import React, { useEffect } from 'react'
+import Navbar from '../Navigation/Navbar'
 
-const Layout = ({ children }) => {
+export default function Layout({ children }) {
+>>>>>>> testing
 
+    const [open, setOpen] = React.useState(false);
 
     return (
         <>
@@ -11,5 +17,3 @@ const Layout = ({ children }) => {
         </>
     )
 }
-
-export default Layout
